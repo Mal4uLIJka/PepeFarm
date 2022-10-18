@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PepeFarm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="wrapper">
+
+            <div class="head">
+
+                    <input
+                    class="input__box__mobile"
+                    type="text"
+                    id="myInput_m"
+                    onkeyup="myFunction_m()"
+                    placeholder="Ок, ферма..."/>
+
+                <h1 class="logo__title" id="logo">
+                    #PepeFarm
+                </h1>
+
+                <div class="addiction">
+                    <input
+                    class="input__box"
+                    type="text"
+                    id="myInput"
+                    onkeyup="myFunction()"
+                    placeholder="Ок, ферма..."/>
+
+                
+
+                <!-- <div class="picker" onclick="document.getElementById('myInput').value = 'Ферма слизи'; mySelect('Ферма слизи')">
+                        <div class="img__box">
+                            <img src="./img/slime_ball.png" alt="slime_ball" class="imgFarm">
+                    </div> -->
+
+                    <div class="searchBox">
+                        <img src="./img/search.png" id="searchImg" width="28px" height="28px" onclick="search__box()">
+                    </div>
+
+                    <div class="changeMode">
+                        <img src="./img/blocks.png" id="modeImg" width="28px" height="28px" onclick="mode()">
+                        
+                    </div>
+
+
+                </div>
+                
+
+            </div>
+                
+         
+        </div>
+
+    </header>
+
+   
+
+    <div class="crate__open">
+         
+    </div>
+
+    
+
+    <div class="wrapper">
+
+        
+
+        <div id="lines">
+
+            <ul id="myUL">
+
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/emerald.png" alt="emerald" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Матрица жителей</div>
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            TheEvilM#8025
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Нижний мир: -62 129 -53</div>
+                                <div>► Верхний мир: -527 125 -355</div>
+                            </div>    
+    
+                        </div>
+                        
+                        <div class="line"></div>
+    
+                            <div><b>Мир:</b> Мир ферм</div>
+                                
+                                <div><b>Совет:</b> На входе есть книжка с правилами и инструкцией использования, обязательно прочитайте её.</div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/blaze_rod.png" alt="Blaze_Rod" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма ифритов</div>
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            -//-
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Нижний мир: 194 53 -608</div>
+                            </div>
+    
+                        </div>
+    
+                        <div class="line"></div>
+                        
+                            <div><b>Мир:</b> Мир построек 2</div>
+                            <div><b>Совет:</b> Добираться по северной ветке хаба под бедроком.</div>
+    
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/diamond_boots.png" alt="diamond_boots" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма проворств (Swift Sneak)</div>
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            TheEvilM#8025
+                            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Нижний мир: -219 129 123</div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="line"></div>
+    
+                        <div><b>Мир:</b> Мир ферм</div>
+                        <div><b>Совет:</b> <span style="color: #ff0000;">Внимательно читайте правила на ферме!</span> Когда закончите фармить - бегите выключать рычаг, а потом обратно добивать оставшихся Варденов.</div>
+                        <div><b>По вопросам:</b> TheEvilM#8025.</div>
+    
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/honey_bottle.png" alt="honey_bottle" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма мёда</div>  
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            -//-
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Нижний мир: -109 162 153</div>
+                            </div>
+                        </div>
+    
+                        <div class="line"></div>
+                        
+                        <div><b>Мир:</b> Мир ферм</div>
+                        <div><b>Совет:</b> Всё что нужно - взять бутылки мёда с фермы, переделать в блоки мёда, а пустые бутылки сложить в нужный сундук. <span style="color: #ff0000;">Читайте таблички.</span></div>
+                        <div><b>По вопросам:</b> TheEvilM#8025.</div>
+    
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/iron_ingot.png" alt="iron_ingot" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма железа</div>
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            -//-
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Нижний мир: -32 129 -54</div>
+                                <div>► Верхний мир: 260 y -430</div>
+                            </div>
+    
+                        </div>
+    
+                        <div class="line"></div>
+                        
+                        <div><b>Мир:</b> Мир ферм</div>
+                        <div><b>Совет:</b> <span style="color: #ff0000;">Нельзя ставить никакие блоки на ферме! Если кто-то есть в АФК зоне - брать железо нельзя</span> Начинаешь фармить - поставь табличку со своим ником на правый нижний сундук. По оканчании фарма не забудь убрать её! Когда забираете предметы, <span style="color: #ff0000;">оставляйте разметку в сундуках</span>!</div>
+    
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/ink_sac.png" alt="ink_sac" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма чернил</div>
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            -//-
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Нижний мир: 285 129 -87</div>
+                            </div>
+                        </div>
+                        
+                        <div class="line"></div>
+    
+                        <div><b>Мир:</b> Мир ферм</div>
+                        <div><b>Совет:</b> Чтобы ферма работала максимально продуктивно, стоять нужно в специальном афк споте.</div>
+    
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/pearlescent_froglight_top.png" height="63px" width="63px" alt="pearlescent_froglight_top" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма квамп</div>
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            -//-
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Нижний мир: -900 129 -550</div>
+                            </div>
+                        </div>
+    
+                        <div class="line"></div>
+    
+                        <div><b>Мир:</b> Мир ферм</div>
+                        <div><b>Совет:</b> Общая ферма квамп всех цветов, имеется склад внизу, просьба соблюдать порядок на нём. Также приносит достаточно много магма слизи.</div>
+                        
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/bone.png" alt="bone" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма cкелетов</div>
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            -//-
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Верхний мир: 2522 y -911</div>
+                            </div>
+                        </div>
+                        
+                        <div class="line"></div>
+    
+                        <div><b>Мир:</b> Мир ферм</div>
+                        <div><b>Совет:</b> Обычная ферма скелетов. <span style="color: #ff0000;">ВАЖНО</span>: ферма работает на двух спавнерах и для максимальной производительности, нужно стоять афк на досках.</div>
+                        
+    
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/poppy.png" alt="poppy" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма цветов</div>
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            -//-
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Нижний мир: 304 129 -86</div>
+                            </div>
+                        </div>
+                        
+                        <div class="line"></div>
+    
+                        <div><b>Мир:</b> Мир ферм</div>
+                        <div class="with__link"><b>Совет:</b> Работает ферма автоматически после того, как вы положили костную муку в сундук, как показано на <a target="_blank" href="https://cdn.discordapp.com/attachments/1025134141727055902/1029691714430054400/2022-10-10_23.28.29.png" target="_blank" style="color: white;">скриншоте</a>. На территории расположено 5 секций, около каждой есть обозначения цветов, которые фармит данный фрагмент. В распоряжении есть оранжевый, красный, белый, розовый, жёлтый, синий, светло-серый и пурпурный цвета. По всей территории расположены <a target="_blank" href="https://media.discordapp.net/attachments/1025134141727055902/1029691714794963014/unknown.png" style="color: white;">указатели</a>, которые обозначают расположение каждого отсека. Желательно афкашить в специальном <a href="https://media.discordapp.net/attachments/1025134141727055902/1029691715143086090/763b59f015ce4a15.png" target="_blank" style="color: white;">споте</a>, чтобы вас не убили мобы и не воровать мобкап соседней фермы.</div>
+                      
+    
+                    </div>
+                </li>
+                 
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/cooked_porkchop.png" alt="cooked_porkchop" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма хоглинов №1</div>
+                
+                              <div class="tag" style="display: none;">
+                                Еда
+                          </div>
+
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            -//-
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Нижний мир: -288 129 202</div>
+                            </div>
+                        </div>
+                        
+                        <div class="line"></div>
+    
+                        <div><b>Мир:</b> Мир ферм</div>  
+                        <div class="with__link"><b>Совет:</b> Находится на ответвление(207) красной линии. Ставишь табличку со своим ником и поднимаешься наверх в АФК спот. После фарма не забудь убрать табличку.</div>
+                       
+    
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/cooked_porkchop.png" alt="cooked_porkchop" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма хоглинов №2</div>
+                              
+                              <div class="tag" style="display: none;">
+                                Еда
+                          </div>
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            IDarkSun#0617
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Нижний мир: -892 129 32</div>
+                            </div>
+                        </div>
+    
+                        <div class="line"></div>
+    
+                        <div><b>Мир:</b> Мир ферм</div>
+                        <div class="with__link"><b>Совет:</b> Находится на зеленой линии. Проверяешь лампу рядом с подъемом. Не горит - поднимаешься наверх в АФК спот.</div>
+                        <div><b>По вопросам:</b> IDarkSun#0617</div>
+                        
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/gold_ingot.png" alt="gold_ingot" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма золота</div>
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            qdesty#1997
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Нижний мир: 74 129 186</div>
+                                <div>► Верхний мир: 600 y 1450</div>
+                            </div>
+                        </div>
+    
+                        <div class="line"></div>
+                        
+                        <div><b>Мир:</b> Мир ферм</div> 
+                        <div class="with__link"><b>Совет:</b> <span style="color: #ff0000;">Нельзя убивать мечом!</span> Заходишь с одной стороны - выходишь с другой. 
+                                Если фармишь только золото - поставь таблички "<Ник> фармит золото" у АФК спота и на сундуке с золотом снизу, после этого встань рядом с АФК спотом, не загораживая проход туда.</div>
+                        <div><b>По вопросам:</b> qdesty#1997</div>
+                        
+                    </div>
+                </li>
+                 
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/cyan_concrete.png" height="63px" width="63px" alt="cyan_concrete" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Бетономешалка</div>
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            -//-
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Верхний мир: 70 у -140</div>
+                            </div>
+                        </div>
+    
+                        <div class="line"></div>
+                        
+                        <div><b>Мир:</b> Мир ферм</div>
+                        <div class="with__link"><b>Совет:</b> Цемент ставить на красный факел. Бетон из механизма <span style="color: #ff0000;">вручную</span> не доставать, если вам нужен весь бетон, то используйте землю из сундука.</div>
+                    
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/horn_coral_fan.png" alt="horn_coral_fan" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма кораллов</div>
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            -//-
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Верхний мир: 59 63 -57</div>
+                            </div>
+                        </div>
+                        
+                        <div class="line"></div>
+    
+                        <div><b>Мир:</b> Мир ресурсов</div>  
+                        <div class="with__link"><b>Совет:</b> Общественная ферма кораллов. Для использования нужно встать на поршень, нажать на рычаг, смотреть в канал с водой и зажать ЛКМ с инструментом на шёлковое касание в руке. По стеклянной лестнице можно пополнить костную муку, а справа можно забрать ресурсы. Ферма не ломается от ее отгрузки во включенном состоянии, но лучше её выключать. Обязательно прочитать правила. Не забирать ресурсы, если их в этот момент фармят.</div>
+                  
+    
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/lava_bucket.png" alt="lava_bucket" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма лавы</div>
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            -//-
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Верхний мир: -2 74 19</div>
+                            </div>
+                        </div>
+                        
+                        <div class="line"></div>
+    
+                        <div><b>Мир:</b> Мир ферм</div>
+    
+                    </div>
+                </li>                
+
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/pointed_dripstone_down_tip.png" alt="pointed_dripstone_down_tip" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма капельников</div>
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            -//-
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Верхний мир: 16 83 5</div>
+                            </div>
+                        </div>
+    
+                        <div class="line"></div>
+    
+                        <div><b>Мир:</b> Мир ферм</div>
+                        
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/cactus_side.png" height="63px" width="63px" alt="cactus_side" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма кактусов</div>
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            -//-
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Верхний мир: 10 74 -22 и -14 74 18</div>
+                            </div>
+                        </div>
+    
+                        <div class="line"></div>
+                        
+                        <div><b>Мир:</b> Мир ферм</div>
+    
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/cobblestone.png" height="63px" width="63px" alt="cobblestone" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма булыжника</div>
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            -//-
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Верхний мир: -23 66 -10</div>
+                            </div>
+                        </div>
+    
+                        <div class="line"></div>
+                        
+                        <div><b>Мир:</b> Мир ферм</div>
+    
+                    </div>
+                </li>
+
+               <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/basalt.png" height="63px" width="63px" alt="basalt" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма базальтаL</div>
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            -//-
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Верхний мир: 23 67 12</div>
+                            </div>
+                        </div>
+                        
+                        <div class="line"></div>
+    
+                        <div><b>Мир:</b> Мир ферм</div>
+    
+                    </div>
+                </li>
+                 
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/wheat.png" alt="wheat" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма пшеницы</div>
+
+                              <div class="tag" style="display: none;">
+                                    Еда
+                              </div>
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            -//-
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Верхний мир: -90 71 0</div>
+                            </div>
+                        </div>
+                        
+                        <div class="line"></div>
+    
+                        <div><b>Мир:</b> Мир ферм</div>
+                        <div><b>Совет: </b>После сбора пшеницы обязательно засадите обратно!</div>
+    
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/gunpowder.png" alt="gunpowder" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма пороха</div>
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            -//-
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Нижний мир: 130 129 130</div>
+                            </div>
+                        </div>
+                        
+                        <div class="line"></div>
+    
+                        <div><b>Мир:</b> Мир ферм</div>
+                        <div><b>Совет: </b>Общая ферма пороха на <a href="https://media.discordapp.net/attachments/1025134141727055902/1029700503594082324/964b1eb0b1c7d0ad.png" target="_blank" style="color: white;">двух игроков</a>. На ферме <a target="_blank" href="https://media.discordapp.net/attachments/1025134141727055902/1029700503984144455/4a24af5f6e554c29.png" style="color: white;">есть таблички и кафедра с правилами</a>, пожалуйста ознакомьтесь. <span style="color: #ff0000;">ЗАПРЕЩЕНО</span> входить в порталы, <span style="color: #ff0000;">ЗАПРЕЩЕНО</span> залезать на самый верх механизма, <span style="color: #ff0000;">ЗАПРЕЩЕНО</span> заходить в порталы фермы через верхний мир. Если вы заметили что вагонетка застряла как показано на <a href="https://media.discordapp.net/attachments/1025134141727055902/1029700505028534323/e093acea3a161314.png" target="_blank" style="color: white;">скриншоте</a>, сломайте её и пустите по рельсам в любую сторону. Пожалуйста, уважайте других игроков и не берите чужой порох, не засоряйте территорию сундуками, группируйте свои сундуки там, где уже стоят чужие.</div>
+                    </div>
+                </li>
+                 
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/slime_ball.png" alt="slime_ball" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма слизи</div> 
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            -//-
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Нижний мир: -130 129 32</div>
+                            </div>
+                        </div>
+                        
+                        <div class="line"></div>
+    
+                        <div><b>Мир:</b> Мир ферм</div>
+                        <div><b>Совет: </b>Общая ферма слизи, без необходимости вниз не спускаться. Лут приходит в сундук, афк стоять на стеклянной платформе.</div>
+    
+                    </div>
+                </li>
+                 
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/feather.png" alt="feather" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма перьев</div>
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            -//-
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Нижний мир: -130 129 32</div>
+                            </div>
+                        </div>
+    
+                        <div class="line"></div>
+    
+                        <div><b>Мир:</b> Мир ферм</div>
+                        <div><b>Совет: </b>Общая ферма перьев, без необходимости вниз не спускаться. Лут приходит в сундук, афк стоять на стеклянной платформе.</div>
+                        
+                    </div>
+                </li>
+        
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/moss_block.png" height="63px" width="63px" alt="moss_block" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма мха</div>
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            -//-
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Нижний мир: -130 129 32</div>
+                            </div>
+                        </div>
+                        
+                        <div class="line"></div>
+    
+                        <div><b>Мир:</b> Мир ферм</div>
+                        <div><b>Совет: </b>Общая ферма мха, без необходимости вниз не спускаться. Лут приходит в сундук, афк стоять на стеклянной платформе.</div>
+    
+                    </div>
+                </li>
+                 
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/flowering_azalea_top.png" height="63px" width="63px" alt="flowering_azalea_top" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма азалии</div>
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            -//-
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Нижний мир: -130 129 32</div>
+                            </div>
+                        </div>
+                        
+                        <div class="line"></div>
+    
+                        <div><b>Мир:</b> Мир ферм</div>
+                        <div><b>Совет: </b>Общая ферма азалии, без необходимости вниз не спускаться. Лут приходит в сундук, афк стоять на стеклянной платформе.</div>
+    
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/slime_ball.png" alt="slime_ball" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма слизи</div>
+                
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            -//-
+            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Нижний мир: -140 129 115</div>
+                            </div>
+                        </div>
+                        
+                        <div class="line"></div>
+    
+                        <div><b>Мир:</b> Мир ферм</div>
+                        <div><b>Совет: </b>Общественная ферма слизи <a href="https://media.discordapp.net/attachments/1025134141727055902/1030592611892871219/0909362ed65d27fe.png" target="_blank" style="color: white;">на двух игроках</a>. Перед тем как пользоваться фермой нужно прочитать правила.</div>
+    
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <div class="name__box">
+                            <div class="img__box">
+                                <img src="./img/prismarine_crystals.png" alt="prismarine_crystals" class="imgFarm">
+                            </div>
+                            
+                            <div class="name">Ферма стражей</div>
+                
+                              <div class="tag" style="display: none;">
+                                Еда
+                          </div>
+
+                        </div>
+                
+                        <div class="line"></div>
+            
+                        <div class="bottom__box">
+            
+                            -//-
+                            
+                            <div>
+                                <div><b>Координаты:</b></div>
+                                <div>► Нижний мир: </div>
+                                <div>► Верхний мир: </div></div>
+                            </div>
+
+                        <div class="line"></div>
+                        
+                        <div><b>Мир:</b> Мир ресурсов</div>
+                        <div><b>Совет:</b> Общественная ферма гвардов на двух игроках. Один игрок - прогружает ферму в верхнем мире, другой - прогружает ее в нижнем мире. Перед использованием фермы нужно проверить, что вагонетка катается, если нет, то нужно нажать на кнопку рядом с раздатчиком. Для перехода в ручной режим убийства гвардов нужно встать на полублок между забором и оградой, нажать на рычаг, который находится на платформе.</div>
+
+                    </div>  
+                </li>
+
+            </ul>
+
+        </div> 
+
+        <div class="grid" id="cases"></div>
+    
+        
+        
+    </div>
+        
+
+    <div class="crate__close">
+         
+    </div>
+
+<script>
+
+function openbox(id){
+    display = document.getElementById(id).style.display;
+
+    if(display=='none'){
+       document.getElementById(id).style.display='block';
+    }else{
+       document.getElementById(id).style.display='none';
+    }
+}
+
+function myFunction() {
+
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName("li");
+
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByClassName("name__box")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+
+}
+
+function myFunction_m() {
+
+var input, filter, ul, li, a, i, txtValue;
+input = document.getElementById("myInput_m");
+filter = input.value.toUpperCase();
+ul = document.getElementById("myUL");
+li = ul.getElementsByTagName("li");
+
+for (i = 0; i < li.length; i++) {
+  a = li[i].getElementsByClassName("name__box")[0];
+  txtValue = a.textContent || a.innerText;
+  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+    li[i].style.display = "";
+  } else {
+    li[i].style.display = "none";
+  }
+}
+
+}
+
+function mySelect(text) {
+
+var input, filter, ul, li, a, i, txtValue;
+filter = text.toUpperCase();
+ul = document.getElementById("myUL");
+li = ul.getElementsByTagName("li");
+
+for (i = 0; i < li.length; i++) {
+  a = li[i].getElementsByClassName("name__box")[0];
+  txtValue = a.textContent || a.innerText;
+  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+    li[i].style.display = "";
+  } else {
+    li[i].style.display = "none";
+  }
+}
+
+}
+
+let modeState=0;
+
+		function mode(){
+			
+			if (modeState==0) {
+				document.getElementById("modeImg").src="./img/lines.png";
+                document.getElementById("lines").style.display='none';
+                document.getElementById("cases").style.display='block';
+				modeState=1;
+			} else {
+				document.getElementById("modeImg").src="./img/blocks.png";
+                document.getElementById("lines").style.display='block';
+                document.getElementById("cases").style.display='none';
+				modeState=0;
+			}
+		}
+
+let searchState=0;
+
+function search__box(){
+			
+			if (modeState==0) {
+
+                document.getElementById("logo").style.display='none';
+                document.getElementById("myInput_m").style.display='block';
+				modeState=1;
+			} else {
+                document.getElementById("logo").style.display='block';
+                document.getElementById("myInput_m").style.display='none';
+				modeState=0;
+			}
+		}
+
+</script>
+
+</body>
+</html>
