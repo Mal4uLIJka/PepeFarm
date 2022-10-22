@@ -441,7 +441,7 @@ body{
 
 
   .wrapper{
-    max-width: 1216px;
+    max-width: 1236px;
     margin: 0 auto;
   }
 
@@ -459,8 +459,6 @@ body{
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    display: flex;
-    align-items: center;
     margin-top: 22px;
     margin-left: 30px;
   }
@@ -474,8 +472,9 @@ body{
     border: 1px solid rgba(116, 115, 138, 0.17);
     padding: 36px 42px;
     margin: 0 auto;
-    width: 59%;
-    margin-top: 36px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
@@ -523,6 +522,8 @@ body{
     font-size: 30px;
     line-height: 37px;
 }
+
+
 
 @media (max-width: 953px) {
     .name__box{
@@ -651,4 +652,33 @@ b{
 .searchBox{
     margin-top: 22px;
     margin-right: 26px;
+}
+
+.pic__img__box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.pic__img__box div:nth-child(n){
+        background: #161619;
+        outline: 1px solid rgba(116, 115, 138, 0.17);
+        width: 83px;
+        height: 83px;
+        margin: 0 10px;
+        margin-top: 20px;
+        
+
+}
+
+.pic__img__box div:nth-child(n):hover{
+    cursor: pointer;
+    background: #1D1D21;
+}
+
+.pic__img__box img:nth-child(n){
+    margin: 17px 17px;
+    width: 48px;
+    height: 48px;
 }
