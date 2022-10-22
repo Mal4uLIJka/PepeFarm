@@ -32,19 +32,12 @@
                     onkeyup="myFunction()"
                     placeholder="Ок, ферма..."/>
 
-                
-
-                <!-- <div class="picker" onclick="document.getElementById('myInput').value = 'Ферма слизи'; mySelect('Ферма слизи')">
-                        <div class="img__box">
-                            <img src="./img/slime_ball.png" alt="slime_ball" class="imgFarm">
-                    </div> -->
-
                     <div class="searchBox">
                         <img src="./img/search.png" id="searchImg" width="28px" height="28px" onclick="search__box()">
                     </div>
 
                     <div class="changeMode">
-                        <img src="./img/blocks.png" id="modeImg" width="28px" height="28px" onclick="mode()">
+                        <img src="./img/blocks.png" id="modeImg" width="28px" height="28px" onclick="mode(); document.getElementById('myInput').value = ''; mySelect('');">
                         
                     </div>
 
@@ -69,7 +62,25 @@
 
     <div class="wrapper">
 
-        
+        <div class="grid" id="cases">
+
+            <div class="pic__img__box">
+                <div onclick="document.getElementById('myInput').value = 'Матрица жителей'; mySelect('Матрица жителей'); mode();"> <img src="./img/emerald.png" alt="emerald"> </div>
+                <div onclick="document.getElementById('myInput').value = 'Ферма ифритов'; mySelect('Ферма ифритов'); mode();"> <img src="./img/blaze_rod.png" alt="blaze_rod"> </div>
+                <div onclick="document.getElementById('myInput').value = 'Ферма проворств (Swift Sneak)'; mySelect('Ферма проворств (Swift Sneak)'); mode();"> <img src="./img/netherite_leggings.png" alt="netherite_leggings"> </div>
+                <div onclick="document.getElementById('myInput').value = 'Ферма мёда'; mySelect('Ферма мёда'); mode();"> <img src="./img/honey_bottle.png" alt="honey_bottle"> </div>
+                <div onclick="document.getElementById('myInput').value = 'Ферма железа'; mySelect('Ферма железа'); mode();"> <img src="./img/iron_ingot.png" alt="iron_ingot"> </div>
+                <div onclick="document.getElementById('myInput').value = 'Ферма чернил'; mySelect('Ферма чернил'); mode();"> <img src="./img/ink_sac.png" alt="ink_sac"> </div>
+                <div onclick="document.getElementById('myInput').value = 'Ферма квамп'; mySelect('Ферма квамп'); mode();"> <img src="./img/pearlescent_froglight_top.png" alt="pearlescent_froglight_top"> </div>
+                <div onclick="document.getElementById('myInput').value = 'Ферма cкелетов'; mySelect('Ферма cкелетов'); mode();"> <img src="./img/bone.png" alt="bone"> </div>
+                <div onclick="document.getElementById('myInput').value = 'Ферма цветов'; mySelect('Ферма цветов'); mode();"> <img src="./img/poppy.png" alt="poppy"> </div>
+                <div onclick="document.getElementById('myInput').value = 'Ферма золота'; mySelect('Ферма золота'); mode();"> <img src="./img/gold_ingot.png" alt="gold_ingot"> </div>
+                <div onclick="document.getElementById('myInput').value = 'Ферма кораллов'; mySelect('Ферма кораллов'); mode();"> <img src="./img/horn_coral_fan.png" alt="horn_coral_fan"> </div>
+                <div onclick="document.getElementById('myInput').value = 'Ферма лавы'; mySelect('Ферма лавы'); mode();"> <img src="./img/lava_bucket.png" alt="lava_bucket"> </div>
+                
+            </div>
+    
+        </div>
 
         <div id="lines">
 
@@ -144,7 +155,7 @@
                     <div class="box">
                         <div class="name__box">
                             <div class="img__box">
-                                <img src="./img/diamond_boots.png" alt="diamond_boots" class="imgFarm">
+                                <img src="./img/netherite_leggings.png" alt="netherite_leggings" class="imgFarm">
                             </div>
                             
                             <div class="name">Ферма проворств (Swift Sneak)</div>
@@ -660,7 +671,7 @@
                                 <img src="./img/basalt.png" height="63px" width="63px" alt="basalt" class="imgFarm">
                             </div>
                             
-                            <div class="name">Ферма базальта</div>
+                            <div class="name">Ферма базальтаL</div>
                 
                         </div>
                 
@@ -940,14 +951,12 @@
 
             </ul>
 
-        </div> 
-
-        <div class="grid" id="cases"></div>
-    
-        
+        </div>
         
     </div>
         
+
+    
 
     <div class="crate__close">
          
